@@ -1,9 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//mport PropTypes from 'prop-types';
 import style from "../Styles/signin.module.css"
-const propTypes = {};
+import logo from "../assets/images/logo.png"
 
-const defaultProps = {};
+//const propTypes = {};
+
+//const defaultProps = {};
 
 /**
  * 
@@ -13,11 +15,16 @@ const Signin = () => {
         <div className={style.signin} >
 
                 <div className={style.leftside} >
-                    <div className={style.logo} >logo</div>
+                    <div className={style.logo} >
+                      <img src={logo} ></img>
+                    </div>
                     <div className={style.quote} >let's Hire</div>
-                    <div className={style.description}>description</div>
+                    <div className={style.description}>
+                        <p>Recruiting candidates is easier than ever with EMCRecruitement .
+                           Whether you work for a recruitment agency or in a human resources department,
+                           software is made for you. Start now!</p>
+                    </div>
                 </div>
-
                 <div className={style.rightside} >
                 </div>
         </div>
@@ -25,8 +32,8 @@ const Signin = () => {
            
 }
 
-Signin.propTypes = propTypes;
-Signin.defaultProps = defaultProps;
+//Signin.propTypes = propTypes;
+//Signin.defaultProps = defaultProps;
 
 
 export default Signin;

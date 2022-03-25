@@ -7,8 +7,11 @@
     width: 50%;
     height: 100%;
     background-image: url(../assets/images/bgsignin.png);
-
 }
 .leftside > div {
-    margin-right: 79%;
+    margin-left: 61px;
+    color: white;
+}
+.logo {
+    margin-top: 22%;
 }
