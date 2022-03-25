@@ -1,0 +1,4 @@
+const quotes =["Recruiting1 candidates is easier than ever with EMCRecruitement . Whether you work for a recruitment agency or in a human resources department, software is made for you. Start now",
+               "Recruiting2 candidates is easier than ever with EMCRecruitement . Whether you work for a recruitment agency or in a human resources department, software is made for you. Start now",
+               "Recruiting3 candidates is easier than ever with EMCRecruitement . Whether you work for a recruitment agency or in a human resources department, software is made for you. Start now"] ;
+export default quotes;

@@ -1,7 +1,8 @@
-import React from 'react';
+import React ,{useState} from 'react';
 //mport PropTypes from 'prop-types';
 import style from "../Styles/signin.module.css"
 import logo from "../assets/images/logo.png"
+import quotes  from './quotes';
 
 //const propTypes = {};
 
@@ -11,18 +12,24 @@ import logo from "../assets/images/logo.png"
  * 
  */
 const Signin = () => {
+    const [index, setindex] = useState(0)
+    const quote = quotes[index]
+    function nextQuote(i){
+        setindex(i)
+    }
     return(
         <div className={style.signin} >
 
                 <div className={style.leftside} >
                     <div className={style.logo} >
-                      <img src={logo} ></img>
+                      <img alt="" src={logo} ></img>
                     </div>
-                    <div className={style.quote} >let's Hire</div>
+                    <div className={style.quote} >Let's Change the way we Hire!</div>
                     <div className={style.description}>
-                        <p>Recruiting candidates is easier than ever with EMCRecruitement .
-                           Whether you work for a recruitment agency or in a human resources department,
-                           software is made for you. Start now!</p>
+                         <p> {quote}  </p>  
+                         <button onClick={() => nextQuote(0)}></button>
+                         <button onClick={() => nextQuote(1)}></button>
+                         <button onClick={() => nextQuote(2)}></button>
                     </div>
                 </div>
                 <div className={style.rightside} >

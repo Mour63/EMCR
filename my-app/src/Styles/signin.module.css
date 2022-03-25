@@ -10,8 +10,43 @@
 }
 .leftside > div {
     margin-left: 61px;
-    color: white;
+    color: #FFFFFF;
 }
 .logo {
     margin-top: 22%;
+}
+.logo > img {
+    width: 20%;
+}
+.quote {
+    margin-top: 8%;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 170%;
+}
+.description {
+    margin-top: 8%;
+    width: 45%;
+}
+.description > p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.8);
+}
+.description > button {
+    width: 12%;
+    height: 4px;
+    border: none;
+    border-radius: 11px;
+    margin-right: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;;
+}
+.description > button:active {
+    background: #FFFFFF;
 }
