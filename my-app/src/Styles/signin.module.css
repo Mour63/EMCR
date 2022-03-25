@@ -40,6 +40,7 @@
 }
 .description > button {
     width: 12%;
+    cursor: pointer;
     height: 4px;
     border: none;
     border-radius: 11px;
@@ -49,4 +50,26 @@
 }
 .description > button:active {
     background: #FFFFFF;
+}
+/* signin form ------------------------------> */
+.rightside {
+    width: 50%;
+}
+.logoright {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    margin-top: 11%; 
+}
+.logoright > img {
+    width: 17%;
+}
+.formcontainer {
+    width: 408px;
+    height: 687px;
+    margin-left: 26%;
+    margin-top: 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 79px rgba(70, 64, 64, 0.05);
+    border-radius: 25px;
 }

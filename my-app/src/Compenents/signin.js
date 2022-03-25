@@ -14,12 +14,14 @@ import quotes  from './quotes';
 const Signin = () => {
     const [index, setindex] = useState(0)
     const quote = quotes[index]
+    const normalcolor = "rgba(255, 255, 255, 0.2)"
+    const [bgcolors, setbgcolors] = useState(["white",normalcolor,normalcolor])
     function nextQuote(i){
         setindex(i)
     }
     return(
         <div className={style.signin} >
-
+            {/**left side ---------------------------------------------- begin Here : */}
                 <div className={style.leftside} >
                     <div className={style.logo} >
                       <img alt="" src={logo} ></img>
@@ -27,16 +29,26 @@ const Signin = () => {
                     <div className={style.quote} >Let's Change the way we Hire!</div>
                     <div className={style.description}>
                          <p> {quote}  </p>  
-                         <button onClick={() => nextQuote(0)}></button>
-                         <button onClick={() => nextQuote(1)}></button>
-                         <button onClick={() => nextQuote(2)}></button>
+                         <button onClick={() => nextQuote(0)}  style={{backgroundColor: bgcolors[0]}} ></button>
+                         <button onClick={() => nextQuote(1)}  style={{backgroundColor: bgcolors[1]}} ></button>
+                         <button onClick={() => nextQuote(2)}  style={{backgroundColor: bgcolors[2]}} ></button>
                     </div>
                 </div>
+            { /**left side ------------------------------------------------ end Here : */}
+            { /**right side ------------------------------------------------ start Here : */}
                 <div className={style.rightside} >
+                    <div className={style.logoright} > 
+                        <img alt="" src={logo} ></img>
+                    </div>
+                    <div className={style.formcontainer}>
+                        <p className={style.welcome}>Welcome back to  HR impact!</p>
+                        <p>Let’s Login into your Account!</p>
+                        
+                    </div>    
                 </div>
         </div>
     )
-           
+   
 }
 
 //Signin.propTypes = propTypes;
