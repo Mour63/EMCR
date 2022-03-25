@@ -1,11 +1,9 @@
 import './App.css';
-
+import Signin from './Compenents/signin';
 function App() {
   return (
     <div className="App">
-        <p>
-          Ayoub
-        </p>
+       <Signin></Signin>
     </div>
   );
 }
