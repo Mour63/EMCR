@@ -73,3 +73,57 @@
     box-shadow: 0px 8px 79px rgba(70, 64, 64, 0.05);
     border-radius: 25px;
 }
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title  > .welcome {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FF8252;
+}
+.letslogin {
+    margin-bottom: 43px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #252729;
+}
+.signin_up {
+    overflow: hidden;
+    width: 75%;
+    border-radius: 30px;
+    padding: 5px 7px;
+    background: rgba(255, 133, 83, 0.1);
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+}
+.signin_up > button:nth-child(1) {
+    position: relative;
+    background: #FF8252;
+    float: left;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+    border: none;
+    z-index: 1;
+    width: 50%;
+}
+
+.signin_up > button:active {
+    z-index: 2;
+    color:#ffffff ;
+    background: #FF8252;
+}
+

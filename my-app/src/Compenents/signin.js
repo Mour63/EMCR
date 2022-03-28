@@ -41,8 +41,18 @@ const Signin = () => {
                         <img alt="" src={logo} ></img>
                     </div>
                     <div className={style.formcontainer}>
-                        <p className={style.welcome}>Welcome back to  HR impact!</p>
-                        <p>Let’s Login into your Account!</p>
+                        <div className={style.title} >
+                            <p className={style.welcome}>Welcome back to  HR impact!</p>
+                            <p className={style.letslogin}>Let’s Login into your Account!</p>
+                            <div className={style.signin_up}>
+                                <button>Sign in </button>
+                                <button>Sign up</button>
+                            </div>
+                        </div>
+                        <div style={style.form} >
+                                <p>sig in form</p>
+                        </div>
+
                         
                     </div>    
                 </div>
