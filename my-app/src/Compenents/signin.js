@@ -2,6 +2,9 @@ import React ,{useState} from 'react';
 //mport PropTypes from 'prop-types';
 import style from "../Styles/signin.module.css"
 import logo from "../assets/images/logo.png"
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import TextField from '@mui/material/TextField';
 import quotes  from './quotes';
 
 //const propTypes = {};
@@ -49,8 +52,22 @@ const Signin = () => {
                                 <button>Sign up</button>
                             </div>
                         </div>
-                        <div style={style.form} >
-                                <p>sig in form</p>
+                        <div style={style.forminputs} >
+                            <form>
+                                <label>
+                                <p>E-mail Adresse</p>
+                                <EmailOutlinedIcon className={style.icon} />
+                                <input type="text" />
+                                </label>
+                                <label>
+                                <p>Password</p>
+                                <LockOutlinedIcon className={style.icon}/>
+                                <input type="password" />
+                                </label>
+                                <div>
+                                <button type="submit">Login</button>
+                                </div>
+                            </form>
                         </div>
 
                         
