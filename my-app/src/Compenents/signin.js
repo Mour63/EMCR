@@ -45,7 +45,7 @@ const Signin = () => {
                             <p className={style.welcome}>Welcome back to  HR impact!</p>
                             <p className={style.letslogin}>Let’s Login into your Account!</p>
                             <div className={style.signin_up}>
-                                <button>Sign in </button>
+                                <button>Login  </button>
                                 <button>Sign up</button>
                             </div>
                         </div>
