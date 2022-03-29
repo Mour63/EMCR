@@ -137,3 +137,23 @@
     background: #FF8252;
 }
 
+/* .forminputs {
+    background-color: red;
+} */
+.formcontainer > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcontainer > form > label {
+    width: 80%;
+    margin-left: 4%;
+}
+.formcontainer > form > label >input {
+    width: 75%;
+    background: rgba(184, 185, 187, 0.1);
+    border-radius: 29.5px;
+    padding: 12px 14px;
+
+}

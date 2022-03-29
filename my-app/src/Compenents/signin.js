@@ -52,23 +52,21 @@ const Signin = () => {
                                 <button>Sign up</button>
                             </div>
                         </div>
-                        <div style={style.forminputs} >
-                            <form>
+                        <form style={style.forminputs}  >
                                 <label>
-                                <p>E-mail Adresse</p>
-                                <EmailOutlinedIcon className={style.icon} />
-                                <input type="text" />
+                                    <p>E-mail Adresse</p>
+                                    <EmailOutlinedIcon className={style.icon} />
+                                    <input type="text" />
                                 </label>
                                 <label>
-                                <p>Password</p>
-                                <LockOutlinedIcon className={style.icon}/>
-                                <input type="password" />
+                                    <p>Password</p>
+                                    <LockOutlinedIcon className={style.icon}/>
+                                    <input type="password" />
                                 </label>
-                                <div>
-                                <button type="submit">Login</button>
-                                </div>
-                            </form>
-                        </div>
+                                <label>
+                                    <button type="submit">Login</button>
+                                </label>
+                        </form>
 
                         
                     </div>    
