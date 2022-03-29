@@ -2,10 +2,8 @@ import React ,{useState} from 'react';
 //mport PropTypes from 'prop-types';
 import style from "../Styles/signin.module.css"
 import logo from "../assets/images/logo.png"
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import TextField from '@mui/material/TextField';
 import quotes  from './quotes';
+import google from "../assets/images/googleicon.png"
 
 //const propTypes = {};
 
@@ -21,6 +19,7 @@ const Signin = () => {
     const [bgcolors, setbgcolors] = useState(["white",normalcolor,normalcolor])
     function nextQuote(i){
         setindex(i)
+        setbgcolors("white")
     }
     return(
         <div className={style.signin} >
@@ -55,20 +54,25 @@ const Signin = () => {
                         <form style={style.forminputs}  >
                                 <label>
                                     <p>E-mail Adresse</p>
-                                    <EmailOutlinedIcon className={style.icon} />
-                                    <input type="text" />
+                                    <input type="email" placeholder='Enter your email'  />
                                 </label>
                                 <label>
                                     <p>Password</p>
-                                    <LockOutlinedIcon className={style.icon}/>
-                                    <input type="password" />
+                                    <input type="password" placeholder='Enter your password'  />
                                 </label>
                                 <label>
                                     <button type="submit">Login</button>
                                 </label>
+                                <div className={style.orusing} >
+                                    <div> <hr/> </div>
+                                    <div>OR USING</div>
+                                    <div> <hr/> </div>
+                                </div>
+                                <button className={style.google}>
+                                    <div><img alt="" src={google} ></img></div>
+                                    <div>Google</div>
+                                </button>
                         </form>
-
-                        
                     </div>    
                 </div>
         </div>

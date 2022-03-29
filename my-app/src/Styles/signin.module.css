@@ -128,18 +128,12 @@
     border-radius: 30px;
     color: white;
 }
-.icon{
-    position: absolute;
-}
 .signin_up > button:active {
     z-index: 2;
     color:#ffffff ;
     background: #FF8252;
 }
 
-/* .forminputs {
-    background-color: red;
-} */
 .formcontainer > form {
     display: flex;
     flex-direction: column;
@@ -149,11 +143,82 @@
 .formcontainer > form > label {
     width: 80%;
     margin-left: 4%;
+    margin-top: 2%;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #252729;
 }
 .formcontainer > form > label >input {
-    width: 75%;
+    width: 83%;
     background: rgba(184, 185, 187, 0.1);
     border-radius: 29.5px;
-    padding: 12px 14px;
+    padding: 20px 18px;
+    margin-top: 2%;
+    border: none;
+    margin-left: 3%;
+}
+.formcontainer > form > label >input:focus {
+    outline: none !important;
+    border: 1px solid #FF8252 ;
+}
+.formcontainer > form > label > button {
+    width: 93%;
+    margin-left: 3.5%;
+    border-radius: 29.5px;
+    padding: 20px 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 4%;
+    background-color: #FF8252 ;
+    color: white;
+}
+.orusing {
+    width: 100%;
+    display: flex;
+    margin-left: 4%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #B8B9BB;
+    margin-top: 6%;
+}
+.orusing > div {
+    width: 23%;
+}
+.orusing > div:nth-child(2){
+    margin-left: 1.5%;
+}
+.orusing > div:nth-child(3){
+    margin-left: 1.5%;
+}
 
+.google {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 12px 10px 100px rgba(100, 87, 87, 0.25);
+    border-radius: 28.5px;
+    border: none;
+    padding: 12px 38px;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 7%;
+    padding-left: 24px;
+}
+.google > div:nth-child(2) {
+    margin-top: 10%;
+}
+.google > div:nth-child(1) {
+    width: 60%;
+}
+.google > div:nth-child(1) > img {
+    width: 60%;
 }
