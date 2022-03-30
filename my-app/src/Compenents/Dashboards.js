@@ -1,16 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-const propTypes = {};
-
-const defaultProps = {};
+import Sidebar from './sidebar';
+import style from "../Styles/dashboard.module.css"
+import Poste from './poste';
 
 const Dashboards = () => {
-    return <div> Dashboards </div>;
+    return (
+            <div className={style.dashboard} >
+                <Sidebar/>
+                <div className={style.postes}>
+                    <Poste/>
+                    <Poste/>
+                    <Poste/>
+                    <Poste/>
+                    <Poste/>
+                    <Poste/>
+                </div>
+            </div>
+            );
 }
 
-Dashboards.propTypes = propTypes;
-Dashboards.defaultProps = defaultProps;
-// #endregion
 
 export default Dashboards;
