@@ -1,7 +1,6 @@
 .navbar{
     display: flex;
     margin-top: 2%;
-    border: 1px solid red;
 }
 
 .logo > img {

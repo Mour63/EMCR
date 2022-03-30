@@ -1,0 +1,38 @@
+.sidebar {
+    width: 15%;
+    background: #FFFFFF;
+    border: 1px solid rgba(184, 185, 187, 0.4);
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 0px;
+    height: 100vh;
+    margin-top: 2.5%;
+}
+.sidebar > div {
+    margin-left: 19%;
+}
+.options {
+    margin-top: 25%;
+}
+.options > div , .setting {
+    margin-right: 35%;
+    display: flex;
+    margin-top: 19%;
+    color: #88898a;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.options > div:hover , .setting:hover {
+    color: #FF8252;
+}
+.oplabel {
+    margin-left: 12%;
+}
+.setting {
+    margin-top: 55vh;
+}
