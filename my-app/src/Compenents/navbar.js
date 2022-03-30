@@ -22,20 +22,21 @@ const Navbar = () => {
            <div className={style.rightside} >
                <div>
                    <TextField placeholder='Search post' variant="outlined"
+                    sx={{ background: "#FAFAFA" }} 
                     className={style.searchinput}
                     size="small"
                     InputProps={{
+                    sx: { background: "#FAFAFA" ,border: "none" },
                     endAdornment: (
                      <InputAdornment position="end">
-                        <SearchIcon/>
+                        <SearchIcon  sx={{ color: "#FF8252",cursor : "pointer" }} />
                      </InputAdornment>
-                    ),
-                    className : style.searchinput
+                    )
                    }}   />
                </div>
                <div>
                     <button> 
-                         <span><AddOutlinedIcon color='#FF8252' /></span>
+                         <span><AddOutlinedIcon /></span>
                          <span> create offre</span>
                     </button>
                </div>
