@@ -4,6 +4,8 @@ import logo from "../assets/images/logo.png"
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 
 // import PropTypes from 'prop-types';
 
@@ -19,19 +21,25 @@ const Navbar = () => {
            </div>
            <div className={style.rightside} >
                <div>
-                   <TextField placeholder='Search post'  className={style.searchinput}
+                   <TextField placeholder='Search post' variant="outlined"
+                    className={style.searchinput}
+                    size="small"
                     InputProps={{
                     endAdornment: (
                      <InputAdornment position="end">
                         <SearchIcon/>
                      </InputAdornment>
-                    )
+                    ),
+                    className : style.searchinput
                    }}   />
                </div>
                <div>
-                    <button>create offre</button>
+                    <button> 
+                         <span><AddOutlinedIcon color='#FF8252' /></span>
+                         <span> create offre</span>
+                    </button>
                </div>
-               <div>notification</div>
+               <div><NotificationsNoneOutlinedIcon/></div>
                <div>profile img</div>
            </div>
         </div>
