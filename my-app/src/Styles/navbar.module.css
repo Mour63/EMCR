@@ -1,15 +1,16 @@
 .navbar{
     display: flex;
     margin-top: 2%;
+    border: 1px solid red;
 }
 
 .logo > img {
     width: 55%;
-    margin-left: 15%;
+    margin-left: 19%;
 }
 .rightside {
     width: 85%;
-    margin-left: 5%;
+    margin-left: 9%;
     display: flex;
     align-items: center;
 }
@@ -22,9 +23,16 @@
     border: none;
     outline: none;
 }
+.notification , .profileimg{
+    margin-left: 7%;
+}
+.profileimg > img {
+    height: 40%;
+    width: 60%;
+}
 .rightside > div:nth-child(2) {
-    margin-left: 4%;
-    width: 14%;
+    margin-left: 8%;
+    width: 15%;
 }
 .rightside > div > button{
     display: flex;
@@ -44,5 +52,5 @@
     align-items: center;
 }
 .rightside > div > button > span {
-    margin-left: 5%;
+    margin-left: 9%;
 }

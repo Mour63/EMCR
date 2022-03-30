@@ -1,11 +1,12 @@
 import React from 'react';
-import style from "../Styles/navbarsidebar.module.css"
+import style from "../Styles/navbar.module.css"
 import logo from "../assets/images/logo.png"
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import profil from "../assets/images/profil.png"
 
 // import PropTypes from 'prop-types';
 
@@ -40,8 +41,8 @@ const Navbar = () => {
                          <span> create offre</span>
                     </button>
                </div>
-               <div><NotificationsNoneOutlinedIcon/></div>
-               <div>profile img</div>
+               <div className={style.notification}><NotificationsNoneOutlinedIcon sx={{ color: "#FF8252",cursor : "pointer"  }} /></div>
+               <div className={style.profileimg}><img alt="" src={profil}></img></div>
            </div>
         </div>
     )}
