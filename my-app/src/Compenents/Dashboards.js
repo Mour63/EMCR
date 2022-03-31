@@ -8,18 +8,54 @@ const Dashboards = () => {
             <div className={style.dashboard} >
                 <Sidebar/>
                 <div className={style.postes}>
-                    <Poste intitule="ReactJs/Nodj Developer"
+                    <Poste intitule="ReactJs/Nodj Developer "
                            departement="Departement IT"
                            lieu ="Casablanca, avenu des far 44" 
                            contrat="CDI"
                            nbrcandidat="123"
                            etat="Ferme"
+                           nbrprofil="50"
                     />
-                    <Poste/>
-                    <Poste/>
-                    <Poste/>
-                    <Poste/>
-                    <Poste/>
+                    <Poste intitule="ReactJs/Nodj Developer "
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                           nbrprofil="50"
+                    />
+                    <Poste intitule="ReactJs/Nodj Developer "
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                           nbrprofil="50"
+                    />
+                    <Poste intitule="ReactJs/Nodj Developer "
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                           nbrprofil="50"
+                    />
+                    <Poste intitule="ReactJs/Nodj Developer "
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                           nbrprofil="50"
+                    />
+                    <Poste intitule="ReactJs/Nodj Developer "
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                           nbrprofil="50"
+                    />
                 </div>
             </div>
             );
