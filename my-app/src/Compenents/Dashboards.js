@@ -46,7 +46,7 @@ const Dashboards = () => {
                             lieu ="Casablanca, avenu des far 44" 
                             contrat="CDI"
                             nbrcandidat="123"
-                            etat="Ferme"
+                            etat="Publier"
                             nbrprofil="50"
                         />
                         <Poste intitule="ReactJs/Nodj Developer "
@@ -54,7 +54,7 @@ const Dashboards = () => {
                             lieu ="Casablanca, avenu des far 44" 
                             contrat="CDI"
                             nbrcandidat="123"
-                            etat="Ferme"
+                            etat="5 jours"
                             nbrprofil="50"
                         />
                         <div className={style.morebutton}> 
