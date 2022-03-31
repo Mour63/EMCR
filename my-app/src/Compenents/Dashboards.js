@@ -8,7 +8,13 @@ const Dashboards = () => {
             <div className={style.dashboard} >
                 <Sidebar/>
                 <div className={style.postes}>
-                    <Poste/>
+                    <Poste intitule="ReactJs/Nodj Developer"
+                           departement="Departement IT"
+                           lieu ="Casablanca, avenu des far 44" 
+                           contrat="CDI"
+                           nbrcandidat="123"
+                           etat="Ferme"
+                    />
                     <Poste/>
                     <Poste/>
                     <Poste/>
