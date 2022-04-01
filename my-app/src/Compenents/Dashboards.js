@@ -4,10 +4,12 @@ import style from "../Styles/dashboard.module.css"
 import Poste from './poste';
 import NavigateNextOutlinedIcon from '@mui/icons-material/NavigateNextOutlined';
 
+
 const Dashboards = () => {
+  
     return (
             <div className={style.dashboard} >
-                <Sidebar/>
+                <Sidebar/> 
                     <div className={style.postes}>
                         <Poste intitule="ReactJs/Nodj Developer "
                             departement="Departement IT"
@@ -57,16 +59,12 @@ const Dashboards = () => {
                             etat="5 jours"
                             nbrprofil="50"
                         />
-                        <div className={style.morebutton}> 
+                        <div className={style.morebutton}  > 
                            <button>Afficher les 6 offres suivantes <NavigateNextOutlinedIcon/>  </button>
                         </div>
-                   
                     </div>
-              
-               
             </div>
             );
 }
-
 
 export default Dashboards;
