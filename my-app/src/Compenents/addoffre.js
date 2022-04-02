@@ -1,9 +1,12 @@
 import React from 'react';
+import Sidebar from './sidebar';
+import style from '../Styles/'
 
 const Addoffre = () => {
     return (
-            <div>
-                         
+            <div className={style.addoffre} >
+                 <Sidebar/>  
+                 <div className={style.offreforms}></div>
             </div>);
 }
 
