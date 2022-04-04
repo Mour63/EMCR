@@ -60,7 +60,7 @@ const Dashboards = () => {
                             nbrprofil="50"
                         />
                         <div className={style.morebutton}  > 
-                           <button>Afficher les 6 offres suivantes <NavigateNextOutlinedIcon/>  </button>
+                           <button> Afficher les 6 offres suivantes <NavigateNextOutlinedIcon/>  </button>
                         </div>
                     </div>
             </div>
