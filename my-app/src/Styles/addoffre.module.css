@@ -1,3 +1,8 @@
 .addoffre {
     display: flex;
+    
+}
+.offreforms {
+    border: 1px solid;
+    width: 85%;
 }
