@@ -8,10 +8,7 @@ const Addoffre = () => {
             <div className={style.addoffre} >
                  <Sidebar/>  
                  <div className={style.offreforms}>
-                    <p>programme</p>
-                    <p>programme</p>
-                    <p>programme</p>
-                    
+
                  </div>
             </div>);
 }
