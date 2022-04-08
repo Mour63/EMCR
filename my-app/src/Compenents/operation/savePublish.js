@@ -8,5 +8,4 @@ const SavePublish = ({values}) => {
             </div>);
 }
 
-
 export default SavePublish;
