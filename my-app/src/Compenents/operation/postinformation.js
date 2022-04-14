@@ -17,6 +17,7 @@ const Postinformation = ({ nextStep, handleFormData, values }) => {
                         <button type='submit' primary >Post</button>
                         <button type='submit' primary >Post</button>
                         <button type='submit' primary >Post</button>
+                        <button type='submit' primary >Post</button>
                 </form>
             </div>);
 }
