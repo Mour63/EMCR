@@ -26,6 +26,7 @@ const Sidebar = () => {
             <div className={style.setting}>
                 <span><SettingsOutlinedIcon/></span>
                 <span className={style.oplabel}>Setting</span>
+                <span className={style.oplabel}>Setting</span>
             </div>
         </div>
     ) ;
