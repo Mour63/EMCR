@@ -1,5 +1,5 @@
 import './App.css';
-import Signin from './Compenents/signin';
+//import Signin from './Compenents/signin';
 import React from 'react';
 import Navbar from "./Compenents/navbar"
 import Dashboards from "./Compenents/Dashboards"
