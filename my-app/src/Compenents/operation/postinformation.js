@@ -14,12 +14,7 @@ const Postinformation = ({ nextStep, handleFormData, values }) => {
                 <form onSubmit={()=>{submitFormData()}}>
                         <input placeholder='post' name="Intitule" defaultValue={values.Intitule} onChange={()=>{handleFormData("Intitule")}} ></input>
                         <button type='submit' primary >Post</button>
-                        <button type='submit' primary >Post</button>
-                        <button type='submit' primary >Post</button>
-                        <button type='submit' primary >Post</button>
-                        <button type='submit' primary >Post</button>
                 </form>
             </div>);
 }
-
 export default Postinformation;
