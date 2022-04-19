@@ -2,7 +2,8 @@ import './App.css';
 //import Signin from './Compenents/signin';
 import React from 'react';
 import Navbar from "./Compenents/navbar"
-import Dashboards from "./Compenents/Dashboards"
+//import Dashboards from "./Compenents/Dashboards"
+import Userform from "./Compenents/PremierModule/UserForm"
 // import Addoffre from "./Compenents/operation/addoffre"
 // import Dashboards from "./Compenents/Dashboards"
 // import Dashboards from './Compenents/Dashboards';
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
        {/* <Signin></Signin> */}
        <Navbar/>
-       <Dashboards/>
+       <Userform/>
+       {/* <Dashboards/> */}
        {/* <Addoffre/> */}
     </div>
   );

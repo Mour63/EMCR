@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Dialog from '@material-ui/core/Dialog';
+// import Dialog from '@material-ui/core/Dialog';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
-import { List, ListItem, ListItemText } from '@material-ui/core/';
 import Button from '@material-ui/core/Button';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 
 export class Confirm extends Component {
   continue = e => {
@@ -18,38 +18,27 @@ export class Confirm extends Component {
 
   render() {
     const {
-      values: { firstName, lastName, email, occupation, city, bio }
+      values: { Intitule,activités_Poste,Benifique,Pays,ville,Mode,Mobilite_exigence,
+        diplome,ecole,specialite,niveau,Qualite_Technique,Qualite_Relationelle,
+        Autres_exigence,date_debut,date_fin,type_contrat, Nbr_prfile }
     } = this.props;
     return (
       <MuiThemeProvider>
         <>
-          <Dialog
+          {/* <Dialog
             open
             fullWidth
             maxWidth='sm'
-          >
-            <List>
-              <ListItem>
-                <ListItemText primary="First Name" secondary={firstName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Last Name" secondary={lastName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Email" secondary={email} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Occupation" secondary={occupation} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="City" secondary={city} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Bio" secondary={bio} />
-              </ListItem>
-            </List>
-            <br />
+          > */}
+            <form>
+               <TextareaAutosize 
+                aria-label="empty textarea"
+                defaultValue={Intitule}
+                style={{ width: 200 }}>
 
+               </TextareaAutosize>
+            </form>
+            <br />
             <Button
               color="secondary"
               variant="contained"
@@ -61,7 +50,7 @@ export class Confirm extends Component {
               variant="contained"
               onClick={this.continue}
             >Confirm & Continue</Button>
-          </Dialog>
+          {/* </Dialog> */}
         </>
       </MuiThemeProvider>
     );

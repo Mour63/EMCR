@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import FormPersonalDetails from './FormPersonalDetails';
+import Details from './details';
 import Confirm from './Confirm';
 import Success from './Success';
 
 export class UserForm extends Component {
   state = {
     step: 1,
-    firstName: '',
-    lastName: '',
-    email: '',
-    occupation: '',
-    city: '',
-    bio: ''
+    Intitule: " ",     
+    activités_Poste : "",
+    Benifique: "",
+    Pays: "" ,
+    ville : "", 
+    Mode : "" ,
+    Mobilite_exigence : "",
+    diplome : "",
+    ecole : "", 
+    specialite : "" ,
+    niveau : "", 
+    Qualite_Technique : [] ,
+    Qualite_Relationelle : [] , 
+    Autres_exigence : "" , 
+    date_debut : "" , 
+    date_fin : "" , 
+    type_contrat : "" , 
+    Nbr_prfile : "" 
   };
 
   // Proceed to next step
@@ -38,8 +51,14 @@ export class UserForm extends Component {
 
   render() {
     const { step } = this.state;
-    const { firstName, lastName, email, occupation, city, bio } = this.state;
-    const values = { firstName, lastName, email, occupation, city, bio };
+
+    const { Intitule,activités_Poste,Benifique,Pays,ville,Mode,Mobilite_exigence,
+            diplome,ecole,specialite,niveau,Qualite_Technique,Qualite_Relationelle,
+            Autres_exigence,date_debut,date_fin,type_contrat, Nbr_prfile } = this.state;
+
+    const values = { Intitule,activités_Poste,Benifique,Pays,ville,Mode,Mobilite_exigence,
+            diplome,ecole,specialite,niveau,Qualite_Technique,Qualite_Relationelle,
+            Autres_exigence,date_debut,date_fin,type_contrat, Nbr_prfile };
 
     switch (step) {
       case 1:
@@ -60,6 +79,15 @@ export class UserForm extends Component {
           />
         );
       case 3:
+          return (
+            <Details
+              nextStep={this.nextStep}
+              prevStep={this.prevStep}
+              handleChange={this.handleChange}
+              values={values}
+            />
+          );
+      case 4:
         return (
           <Confirm
             nextStep={this.nextStep}
@@ -67,7 +95,8 @@ export class UserForm extends Component {
             values={values}
           />
         );
-      case 4:
+    
+      case 5:
         return <Success />;
       default:
         (console.log('This is a multi-step form built with React.'))
